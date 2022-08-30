@@ -15,6 +15,8 @@
 		596B6E5728BC3D0C0012F78D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596B6E5628BC3D0C0012F78D /* Preview Assets.xcassets */; };
 		596B6E5E28BC3E9B0012F78D /* AddContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B6E5D28BC3E9B0012F78D /* AddContentView.swift */; };
 		596B6E6028BC3F650012F78D /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B6E5F28BC3F650012F78D /* ScanButton.swift */; };
+		59C7A3D028BDB23B008C8B3E /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7A3CF28BDB23B008C8B3E /* TabsView.swift */; };
+		59C7A3D228BDB2F9008C8B3E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7A3D128BDB2F9008C8B3E /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		596B6E5628BC3D0C0012F78D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		596B6E5D28BC3E9B0012F78D /* AddContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentView.swift; sourceTree = "<group>"; };
 		596B6E5F28BC3F650012F78D /* ScanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		59C7A3CF28BDB23B008C8B3E /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		59C7A3D128BDB2F9008C8B3E /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				596B6E4F28BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift */,
+				59C7A3CF28BDB23B008C8B3E /* TabsView.swift */,
 				596B6E5128BC3D0B0012F78D /* ContentView.swift */,
 				596B6E5D28BC3E9B0012F78D /* AddContentView.swift */,
 				596B6E5F28BC3F650012F78D /* ScanButton.swift */,
+				59C7A3D128BDB2F9008C8B3E /* Color+Extension.swift */,
 				59033B7928BD1A740093BC00 /* TextLevelClassifierModel.mlmodel */,
 				59033B7728BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel */,
 				596B6E5328BC3D0C0012F78D /* Assets.xcassets */,
@@ -150,11 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				596B6E6028BC3F650012F78D /* ScanButton.swift in Sources */,
+				59C7A3D028BDB23B008C8B3E /* TabsView.swift in Sources */,
 				596B6E5228BC3D0B0012F78D /* ContentView.swift in Sources */,
 				59033B7A28BD1A740093BC00 /* TextLevelClassifierModel.mlmodel in Sources */,
 				596B6E5028BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift in Sources */,
 				59033B7828BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel in Sources */,
 				596B6E5E28BC3E9B0012F78D /* AddContentView.swift in Sources */,
+				59C7A3D228BDB2F9008C8B3E /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
