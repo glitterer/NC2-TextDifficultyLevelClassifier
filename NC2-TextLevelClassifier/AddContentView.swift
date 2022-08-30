@@ -83,7 +83,6 @@ struct AddContentView: View {
                 }
             }
         }
-        
     }
 }
 

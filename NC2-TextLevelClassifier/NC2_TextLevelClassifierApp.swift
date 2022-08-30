@@ -11,7 +11,7 @@ import SwiftUI
 struct NC2_TextLevelClassifierApp: App {
     var body: some Scene {
         WindowGroup {
-            TabsView()
+            AddContentView()
         }
     }
 }
