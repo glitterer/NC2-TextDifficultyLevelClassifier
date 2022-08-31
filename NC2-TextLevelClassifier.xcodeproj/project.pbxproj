@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59033B7828BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59033B7728BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel */; };
-		59033B7A28BD1A740093BC00 /* TextLevelClassifierModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59033B7928BD1A740093BC00 /* TextLevelClassifierModel.mlmodel */; };
+		5953724228BF907D00919A02 /* TextLevelClassifierModely.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5953724128BF907C00919A02 /* TextLevelClassifierModely.mlmodel */; };
 		596B6E5028BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B6E4F28BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift */; };
 		596B6E5228BC3D0B0012F78D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B6E5128BC3D0B0012F78D /* ContentView.swift */; };
 		596B6E5428BC3D0C0012F78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596B6E5328BC3D0C0012F78D /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		59033B7728BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sentimentAnalysisPractice.mlmodel; sourceTree = "<group>"; };
-		59033B7928BD1A740093BC00 /* TextLevelClassifierModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextLevelClassifierModel.mlmodel; sourceTree = "<group>"; };
+		5953724128BF907C00919A02 /* TextLevelClassifierModely.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextLevelClassifierModely.mlmodel; sourceTree = "<group>"; };
 		596B6E4C28BC3D0B0012F78D /* NC2-TextLevelClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC2-TextLevelClassifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596B6E4F28BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_TextLevelClassifierApp.swift; sourceTree = "<group>"; };
 		596B6E5128BC3D0B0012F78D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				596B6E5D28BC3E9B0012F78D /* AddContentView.swift */,
 				596B6E5F28BC3F650012F78D /* ScanButton.swift */,
 				59C7A3D128BDB2F9008C8B3E /* Color+Extension.swift */,
-				59033B7928BD1A740093BC00 /* TextLevelClassifierModel.mlmodel */,
+				5953724128BF907C00919A02 /* TextLevelClassifierModely.mlmodel */,
 				59033B7728BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel */,
 				596B6E5328BC3D0C0012F78D /* Assets.xcassets */,
 				596B6E5528BC3D0C0012F78D /* Preview Content */,
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				596B6E6028BC3F650012F78D /* ScanButton.swift in Sources */,
+				5953724228BF907D00919A02 /* TextLevelClassifierModely.mlmodel in Sources */,
 				596B6E5228BC3D0B0012F78D /* ContentView.swift in Sources */,
-				59033B7A28BD1A740093BC00 /* TextLevelClassifierModel.mlmodel in Sources */,
 				596B6E5028BC3D0B0012F78D /* NC2_TextLevelClassifierApp.swift in Sources */,
 				59033B7828BC526C0093BC00 /* sentimentAnalysisPractice.mlmodel in Sources */,
 				596B6E5E28BC3E9B0012F78D /* AddContentView.swift in Sources */,

@@ -15,7 +15,7 @@ struct AddContentView: View {
     @State var result = ""
     
     var body: some View {
-        let mlModel = try! TextLevelClassifierModel(configuration: MLModelConfiguration()).model
+        let mlModel = try! TextLevelClassifierModely(configuration: MLModelConfiguration()).model
         let CEFRLevelPredictor = try! NLModel(mlModel: mlModel)
         VStack {
             VStack{
