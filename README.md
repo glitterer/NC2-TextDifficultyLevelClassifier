@@ -1,3 +1,5 @@
+<img width=100 src ="https://user-images.githubusercontent.com/50728605/187830290-a1e10186-9273-4962-96ce-52b930cfdf6d.png">
+
 # NC2-TextDifficultyLevelClassifier
 Scan text and immediately get the difficulty level of the text based of CEFR<br/>
 
