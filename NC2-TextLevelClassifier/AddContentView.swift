@@ -20,7 +20,7 @@ struct AddContentView: View {
         let CEFRLevelPredictor = try! NLModel(mlModel: mlModel)
         VStack {
             VStack{
-                Text("CEFR-Based\nText Level Scanner")
+                Text("CEFR Text Level Scanner")
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
@@ -45,6 +45,13 @@ struct AddContentView: View {
                 Divider()
                     .frame(width: 250, height: 3, alignment: .center)
                 HStack{
+                    Button(action: {
+                        self.content = ""
+                    }) {
+                        Text("Clear all text")
+                            .foregroundColor(.red)
+                    }
+                    .padding(.leading)
                     Spacer()
                     ScanButton(text: $content)
                         .frame(width: 100, height: 40, alignment: .center)
@@ -59,7 +66,7 @@ struct AddContentView: View {
                                 .font(.body)
                                 .foregroundColor(.gray)
                                 .border(.blue)
-                                .frame(height: 350, alignment: .leading)
+                                .frame(height: 300, alignment: .leading)
                                 .padding(.top, 0.0)
                                 .padding(.horizontal)
                         }
@@ -67,24 +74,17 @@ struct AddContentView: View {
                             .font(.body)
                             .opacity(self.content.isEmpty ? 0.25 : 1)
                             .border(.blue)
-                            .frame(height: 350, alignment: .leading)
+                            .frame(height: 300, alignment: .leading)
                             .padding(.horizontal)
                     }
                 }
                 .onTapGesture {
                     self.endTextEditing()
                 }
-                Button(action: {
-                    self.content = ""
-                }) {
-                    Text("Clear all text")
-                }
-                .foregroundColor(.red)
                 
-                Divider()
-                    .frame(width: 250, height: 3, alignment: .center)
-                
-                Text()
+                Image("CEFR representation")
+                    .resizable()
+                    .scaledToFit()
             }
         }
     }
