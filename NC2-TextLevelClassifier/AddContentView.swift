@@ -15,21 +15,35 @@ struct AddContentView: View {
     @State var result = ""
     
     var body: some View {
+        
         let mlModel = try! TextLevelClassifierModely(configuration: MLModelConfiguration()).model
         let CEFRLevelPredictor = try! NLModel(mlModel: mlModel)
         VStack {
             VStack{
-                Text("CEFR-Based Text Level Scanner")
+                Text("CEFR-Based\nText Level Scanner")
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                Text("Scan the text to know how difficult the text is!")
-                    .foregroundColor(.gray)
             }
             .onTapGesture {
                 self.endTextEditing()
             }
             ScrollView() {
+                if self.content.isEmpty {
+                    Text("**Scan Text** to get the difficulty level of your text")
+                        //.font(.title3)
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                }
+                else{
+                    Text("The difficulty level of your text is")
+                        .font(.title3)
+                    Text(CEFRLevelPredictor.predictedLabel(for: content)!)
+                        .font(.title)
+                        .padding(.top, 1.0)
+                }
+                Divider()
+                    .frame(width: 250, height: 3, alignment: .center)
                 HStack{
                     Spacer()
                     ScanButton(text: $content)
@@ -63,24 +77,14 @@ struct AddContentView: View {
                 Button(action: {
                     self.content = ""
                 }) {
-                    Text("Clear all Text")
+                    Text("Clear all text")
                 }
                 .foregroundColor(.red)
+                
                 Divider()
                     .frame(width: 250, height: 3, alignment: .center)
                 
-                if self.content.isEmpty {
-                    Text("**Scan Text** to get\nthe difficulty level of your text")
-                        .font(.title3)
-                        .multilineTextAlignment(.center)
-                }
-                else{
-                    Text("The difficulty level of your text is")
-                        .font(.title3)
-                    Text(CEFRLevelPredictor.predictedLabel(for: content)!)
-                        .font(.title)
-                        .padding(.top, 1.0)
-                }
+                Text()
             }
         }
     }
