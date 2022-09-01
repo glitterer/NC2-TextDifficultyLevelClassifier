@@ -1,4 +1,8 @@
+<img width=100 src ="https://user-images.githubusercontent.com/50728605/187830290-a1e10186-9273-4962-96ce-52b930cfdf6d.png">
+
 # NC2-TextDifficultyLevelClassifier
 Scan text and immediately get the difficulty level of the text based of CEFR<br/>
 
-<img width=250 src ="https://user-images.githubusercontent.com/50728605/187253322-267b9247-f28b-4381-b1a2-1fd2775c00bb.png"> <img width=250 src ="https://user-images.githubusercontent.com/50728605/187253641-d6999150-6594-4e46-a5a8-98a64e0bcd51.png">
+|메인화면|사용방법예시|
+|------|--------|
+|<img width=250 src ="https://user-images.githubusercontent.com/50728605/187828475-ac2f05f3-fcfd-4f9c-81a9-81e2a71c052a.png">|<img width=250 src ="https://user-images.githubusercontent.com/50728605/187829879-052c58de-5388-4e5e-83df-908e47bdf82d.gif">|
